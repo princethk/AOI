@@ -100,7 +100,9 @@ const Map = () => {
             L.polygon(tile.geometry.coordinates, { color: "red" }).addTo(map);
           });
         })
-        .catch((error) => console.error("Error fetching intersecting tiles:", error));
+        .catch((error) =>
+          console.error("Error fetching intersecting tiles:", error)
+        );
     });
   }, []);
 
